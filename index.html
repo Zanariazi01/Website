@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .fade-out-up {
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-out-down {
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        body {
+            min-height: 200vh;
+            /* Pour permettre le défilement */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d-flex flex-column min-vh-100">
+
+        <div class="container-fluid flex-grow-1 d-flex flex-column z-n1">
+            <!-- Cette div doit avoir l'effet -->
+            <div class="row flex-grow-1 blur-up fixed-top">
+                <div class="col text-start fs-1 fw-medium">
+                    <div>
+                        français
+                    </div>
+                    <div>
+                        anglais
+                    </div>
+                </div>
+                <div class="col-6 text-start fs-3 lh-sm fw-normal">
+                    <p class="p-2">
+                        au coeur de ma pratique artistique se trouve le maniement des phénomènes <br> physiques et
+                        biologiques,
+                        tels que la combustion, l'irradiation, ou encore la fusion. <br><br>
+
+                        je tend à permettre un face à face des ambivalences et des dualismes postcoloniaux, à
+                        l'instar de
+                        l'identité métissée et bigarrée dont je suis porteur.<br><br>
+
+                        artiste visuel franco-kurde,<br>
+                        basé à saint-étienne
+                    </p>
+                </div>
+                <div class="col text-end fs-1 fw-medium">
+                    سۆرانی
+                </div>
+            </div>
+            <!-- Fin de l'effet pour cette div -->
+            <!-- Pareil pour cette div mais vers le bas -->
+            <div class="row fixed-bottom blur-down">
+                <div class="col-10 text-start font-size-250 fw-normal lh-1">
+                    zana <span class="fst-italic">riazi</span>
+                </div>
+                <div class="col text-end fs-1 fw-medium d-flex flex-column justify-content-end pb-4">
+                    <div class="text-start">
+                        <div>
+                            + 33 7 55 63 69 80
+                        </div>
+                        <div>
+                            instagram
+                        </div>
+                        <div>
+                            mail
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin de la div vers le bas  -->
+    </div>
+    <main>
+        <section id="section-1" class="snap-item">
+            <img src="/projets/LEDT/Image/Toit avenida, 2024.webp" alt="Toit avenida, 2024" onclick="showPopup('popup-1')">
+        </section>
+        <section id="section-2" class="snap-item">
+            <img src="/projets/siushesh/image/Maquette firing hevinê-min.webp" alt="Maquette firing hevinê" onclick="showPopup('popup-2')">
+        </section>
+        <section id="section-3" class="snap-item">
+            <img src="/projets/coupé-décalé/image coupé-décalé/image/PDV coupédécalé 02.webp" alt="PDV coupédécalé 02" onclick="showPopup('popup-3')">
+        </section>
+        <section id="section-4" class="snap-item">
+            <img src="/projets/beja-rojbash/image br/vue dexpo7-min.webp" alt="vuedexpo-br" onclick="showPopup('popup-4')">
+        </section>
+        <section id="section-5" class="snap-item">
+            <img src="/projets/5-shahrivar/vue d'expo1.jpg" alt="vuedexpo-5sh" onclick="showPopup('popup-5')">
+        </section>
+
+
+    </main>
+    <!-- Pop-ups -->
+    <div id="popup-1" class="popup">
+        <span class="close-btn" onclick="hidePopup('popup-1')">&times;</span>
+          <main style="background-color: black;">  
+            <div class="couverture-LEDT">
+                <img src="/projets/LEDT/Image/Toit avenida, 2024.webp" alt="Toit_Avenida">
+            </div>
+            
+            <div class="repro-texte-LEDT">
+                <div class="texte-LEDT">
+                    <p>suite à l’exploration de l’héritage post-colonial de la ville marocaine de titwan, l’extension du territoire est une série de quelque 158 photographies irradiées.<br><br> actuellement en cours de production elle fera l’objet d’une publication courant automne 2024, designé par le studio akakir, et d’une installation au lieu d’exposition de la serre, à saint-étienne. <br><br> la production de ce projet est soutenu par la fondation hb.</p>
+                </div>
+                <div class="repro-LEDT">
+                    <img src="/projets/LEDT/Image/Caserne R'kaina.webp" alt="Caserne">
+                </div>
+            </div>
+            
+            <div class="repro-texte-LEDT">
+                <div class="repro-LEDT">
+                    <img src="/projets/LEDT/Image/PDV1 copie-min.webp" alt="PDV1">
+                </div>
+                <div class="texte-LEDT">
+                    <p>il s’agit ici d’une composition mosaïcale  particulière à l’art islamique. des compositions de zellige, (ornement géometrique représentant des éléments du réel, spécifique à l’artisanat marocain) s’entrelasssant avec les photographies irradiées, contribuant ainsi à rendre une forme de dignité à la culture maroco-musulmane.</p>
+                </div>
+            </div>
+            
+            <div class="repro-texte-LEDT">
+                <div class="texte-LEDT">
+                    <p>ma focale s’est  portée sur le quartier de l’ensanche, pensé et érigé comme une extension de la médina historique, soit comme l’extension occclassentale de la ville de titwan. ainsi, via une projection de mon propre métissage sur cet espace, il est apparu que les crises inhérentes au croisement culturel se manifestent tant ontologiquement chez l’indivclassu, qu’au travers des environnements et de ses composantes.</p>
+                </div>
+                <div class="repro-LEDT">
+                    <img src="/projets/LEDT/Image/Riyad Al Ochak, 2024.webp" alt="Riyad_Al_Ochak">
+                </div>
+            </div>
+            
+            <div class="repro-texte-LEDT">
+                <div class="repro-LEDT">
+                    <img src="/projets/LEDT/Image/LEDT 0140.webp" alt="LEDT140" >
+                </div>
+                <div class="texte-LEDT">
+                    <p>c’est ainsi que j’ai pu me confronter avec cette région et l’influence andalouse dont elle est infusée, en cela que nous étions, tous deux, tiraillés par les mêmes enjeux, moi dans ma chair et elle dans ses bâtisses.</p>
+                </div>
+            </div>
+            
+            <div class="repro-texte-LEDT">
+                <div class="texte-LEDT">
+                    <p>en voulant rendre compte de ce patrimoine bigarré, j’ai usé d’une altération relevant de la plus petite des échelles, à savoir celle de l’atome. en cela, j’exécute une irradiation des particules de sel d’argent, afin de troubler la vision, et ainsi manifester la vérité de ces histoires complexes.</p>
+                </div>
+                <div class="repro-LEDT">
+                    <img src="/projets/LEDT/Image/LEDT 012.webp" alt="LEDT12">
+                </div>
+            </div>
+            
+            <div class="repro-texte-LEDT">
+                <div class="repro-LEDT">
+                    <img src="/projets/LEDT/Image/LEDT 09.webp" alt="LEDT09">
+                </div>
+                <div class="texte-LEDT">
+                    <p>cette corruption d’image procède, techniquement, en deux temps. il s’agit d’abord de réaliser des échantillons d’irradiation via une société spécialisée dans le rayonnement x ; pour ensuite générer et reproduire, via les échantillons, ces textures et figures grâce à un logiciel d’intelligence artificielle modélisé par mes soins.</p>
+                </div>
+            </div>
+         </main>
+    </div>
+
+    <div id="popup-2" class="popup">
+        <span class="close-btn" onclick="hidePopup('popup-2')">&times;</span>
+                <div class="couverture">
+                    <img src="/projets/siushesh/image/Maquette firing hevinê-min.webp" alt="Maquette firing hevinê">
+                </div>
+            </header>
+        <main style="background-color: black;">
+            <section class="image-texte">
+                <div class="texte">
+                <p>Il s'agit de penser le geste de la combustion tant comme une forme de corruption que de célébration. Sur les murs, prend forme d'adoration de portraits familiaux calcinés, ornés d'un poème de Hafez,</p>
+                <blockquote>
+                    <p><i>Sache que la forteresse de l'espoir a des fondations très fragiles,<br>
+                    Apporte le vin, car les fondements de la vie s'en vont au vent.</i></p>
+                </blockquote>
+                <p>Monument de poésie et de la mystique iranienne. À terre, des figures de révolutions avortées sont disposées sur des foyers de braises atrophiées, afin de rendre compte d'incendies rituels, pratiqués au Kurdistan.</p>
+                </div>
+                <img src="/projets/siushesh/image/Nana Batoul, 2023, 60x50cm, carton, plâtre, suie, unique (Z0-min.webp" alt="Nana Batoul, 2023">
+            </section>
+        
+            <section class="image-texte2">
+                <div class="texte">
+                    <p>Dès lors, cette installation traite de la question de la résilience vis-à-vis d'une violence subite, et ce en faisant converser les échelles existentielles et historiques, autour d'un incendie empirique. Le feu y est ainsi appréhendé comme un vecteur symbolique de purification des lieux, des objets, ou encore de résilience des âmes, que l'on débarrasse des afflictions, des fractures et des infections, tant ontologiques que matérielles.</p>
+                </div>
+                <img src="/projets/siushesh/image/Kourosh devant miroir, 2023.webp" alt="Kourosh devant miroir, 2023">
+            </section>
+        </main>
+    </div>
+
+    <div id="popup-3" class="popup">
+        <span class="close-btn" onclick="hidePopup('popup-3')">&times;</span>
+        <header style="background-color: black;">
+            <img src="/projets/coupé-décalé/image coupé-décalé/image/PDV coupédécalé 02.webp" alt="Couverture Coupé-Décalé">
+    </header>
+    <main style="background-color: black;">
+        <section class="pdv-description">
+            <div class="description">
+                <p>
+                    nominé au prix du livre d'auteur 2023 des rencontres d'arles.<br><br>
+                    coupé-décalé joue avec les paradigmes musicaux ivoiriens et contrecarre avec les représentations exotisantes de ce territoire ainsi que de ces habitants.
+                </p>
+            </div>
+            <div class="pdv">
+                <img src="/projets/coupé-décalé/image coupé-décalé/image/PDV coupédécalé 08.webp" alt="PDV Coupé-Décalé 1">
+            </div>
+        </section>
+
+        <section class="pdv-description">
+            <div class="description">
+                <p>
+                    cet ouvrage couvre une aventure sensible, dans l'acception la plus large du terme, à la croisée d'une œuvre en soi et d'un carnet de voyage.
+                </p>
+            </div>
+            <div class="pdv">
+                <img src="/projets/coupé-décalé/image coupé-décalé/image/PDV coupédécalé 01.webp" alt="PDV Coupé-Décalé 2">
+            </div>
+        </section>
+
+        <section class="pdv-description">
+            <div class="description">
+                <p>
+                    ces photographies mettent en lumières celles et ceux dont j'ai croisé l'itinéraire et laissent les protagonistes photographiés libres de bâtir une narration qui leur est propre, afin de souder le beau et le vrai.
+                </p>
+            </div>
+            <div class="pdv">
+                <img src="/projets/coupé-décalé/image coupé-décalé/image/PDV coupédécalé 04.webp" alt="PDV Coupé-Décalé 3">
+            </div>
+        </section>
+
+        <section class="pdv-description">
+            <div class="description">
+                <p>
+                    ainsi, les photographies qui le composent matérialisent une demi-année au sein de la métropole de côte d'ivoire, abidjan. infusées d'un regard tant candide que lucide.
+                </p>
+            </div>
+            <div class="pdv">
+                <img src="/projets/coupé-décalé/image coupé-décalé/image/PDV coupédécalé 07.webp" alt="PDV Coupé-Décalé 4">
+            </div>
+        </section>
+    </main>
+    </div>
+    <div id="popup-4" class="popup">
+        <span class="close-btn" onclick="hidePopup('popup-4')">&times;</span>
+            <main  style="background-color: black;">
+            <header  style="background-color: black;">
+                <img src="/projets/beja-rojbash/image br/vue dexpo7-min.webp" alt="Vue d'exposition">
+            </header>
+        
+                <section class="description-repro">
+                        <img src="/projets/beja-rojbash/image br/ڕ [ˈɹe], 2022, 80x71cm, impression sur plexiglass bis-min.webp" alt="ڕ [ˈɹe], 2022, 80x71cm, impression sur plexiglass">
+                        <p>l'impression des lettrages a été réalisée sur fond de négatifs de portraits familiaux et de paysages, qui ont été montés entre-eux par l'effet d'une combustion.</p>
+                </section>
+        
+                <section class="description-repro">
+                        <img src="/projets/beja-rojbash/image br/ ێ [e], 2022, 80x61cm, impression sur plexiglas bis-min.webp" alt="ێ [e], 2022, 80x61cm, impression sur plexiglas">
+                        <p>quant aux lettres, c'est en usant des rayons du soleil et d'une unique loupe, qu'elles ont été dessinées.</p>
+                </section>
+        
+                <section class="description-repro">
+                        <img src="/projets/beja-rojbash/image br/ ژ [ʒ], 2022, 80x62cm, impression sur plexiglass bis-min.webp" alt="ژ [ʒ], 2022, 80x62cm, impression sur plexiglass">
+                        <p>beja rojbash, en français « dis bonjour », est la première locution que j'ai articulée dans ma langue paternelle ; et, en cela, ces simples termes cristallisent, avec onirisme et candeur, les enjeux de transmission, d'héritage et de la corruption de ces derniers par le temps.</p>
+                </section>
+        
+            <header>
+                <img src="/projets/beja-rojbash/image br/détail de  ێ [e], 2022, 80x61cm, impression sur plexiglas bis.jpg" alt="Détail de ێ [e], 2022, 80x61cm, impression sur plexiglas">
+            </header>
+        </main>
+    </div>
+    <div id="popup-5" class="popup">
+        <span class="close-btn" onclick="hidePopup('popup-5')">&times;</span>
+        <main style="background-color: black;">
+            <section id="couverture">
+                <img src="/projets/5-shahrivar/vue d'expo1.jpg" alt="Vue de l'exposition">
+            </section>
+    
+            <section class="texte-image">
+                <div class="container">
+                    <div class="pdv">
+                        <img src="/projets/5-shahrivar/16h01, 2022, 36x25x2cm, plâtre et suie-min.webp" class="repro" alt="Œuvre 1 : 16h01, 2022, 36x25x2cm, plâtre et suie">
+                    </div>
+                    <div class="pdv">
+                        <img src="/projets/5-shahrivar/16h02, 2022, 36x25x2cm, plâtre et suie-min.webp" class="repro" alt="Œuvre 2 : 16h02, 2022, 36x25x2cm, plâtre et suie">
+                    </div>
+                </div>
+                <div class="texte">
+                    <p>Incarnation de la férocité d'un événement et de l'émanation de cette violence un demi-siècle après, cette série tend à révéler cet écho. Suite à un travail de recherche au sein d'archives écrites et orales, j'ai pu explorer des sources non-éditées des révoltes indépendantistes kurdes durant le soulèvement du shah en 1979.</p>
+                </div>
+            </section>
+    
+            <section class="texte-image">
+                <div class="container">
+                    <div class="pdv">
+                        <img src="/projets/5-shahrivar/16h03, 2022, 36x25x2cm, plâtre et suie-min.webp" class="repro" alt="Œuvre 3 : 16h03, 2022, 36x25x2cm, plâtre et suie">
+                    </div>
+                    <div class="pdv">
+                        <img src="/projets/5-shahrivar/16h04, 2022, 36x25x2cm, plâtre et suie-min.webp" class="repro" alt="Œuvre 4 : 16h04, 2022, 36x25x2cm, plâtre et suie">
+                    </div>
+                </div>
+                <div class="texte">
+                    <p>Ces révoltes furent réduites à l'oubli, jusqu'à l'émergence d'une photographie, anonyme lorsqu'elle apparut. Ces publications de Jahangir Razmi firent l'effet de détonations, tant dans le champ global du reportage-photographique, qu'au sein de ma propre histoire, en cela qu'y figurent certains parents, d'où la nécessité dont j'ai été empreint quant au réinvestissement de cette imagerie.</p>
+                </div>
+            </section>
+    
+            <section class="texte-image">
+                <div class="container">
+                    <div class="pdv">
+                        <img src="/projets/5-shahrivar/16h15, 2022, 36x25x2cm, plâtre et suie-min.webp" class="repro" alt="Œuvre 5 : 16h15, 2022, 36x25x2cm, plâtre et suie">
+                    </div>
+                    <div class="pdv">
+                        <img src="/projets/5-shahrivar/16h16, 2022, 36x25x2cm, plâtre et suie-min.webp" class="repro" alt="Œuvre 6 : 16h16, 2022, 36x25x2cm, plâtre et suie">
+                    </div>
+                </div>
+                <div class="texte">
+                    <p>La corruption par le feu de cette série de photographies relève, à l'instar des incendies rituels mésopotamiens, d'une purification ésotérique d'une barbarie historique, empirique, transcendant les espaces, les temps et les générations.</p>
+                </div>
+            </section>
+        </main>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const blurUpSection = document.querySelector('.blur-up');
+            const blurDownSection = document.querySelector('.blur-down');
+            const scrollPosition = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+
+            const blurIntensity = (scrollPosition / (windowHeight / 5)) * 10;
+            const limitedBlurIntensity = Math.min(blurIntensity, 13);
+
+            blurUpSection.style.filter = `blur(${limitedBlurIntensity}px)`;
+            blurDownSection.style.filter = `blur(${limitedBlurIntensity}px)`;
+        });
+
+        function showPopup(popupId) {
+            document.getElementById(popupId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hidePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+
+</html>
